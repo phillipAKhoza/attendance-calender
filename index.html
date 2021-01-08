@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header-wraper">
+        <header>
+            <h1>Attendance Register</h1>
+            <ul id="attandanceInfor">
+                <li>Prensent Days:</li>
+                <li>Absent Days:</li>
+                <li>Holidays:</li>
+                <li>Average Attendance:</li>
+            </ul>
+
+        </header>
+    </div>
+    <div id="calender">
+        <label for="weeks"></label>
+        <div class="custom-select" style="width:700px;">
+            <select id="weeks">
+                <option value="0" selected>Please select Week</option>
+                <option id="week1" value="1">Week1</option>
+                <option id="week2" value="2">Week2</option>
+                <option id="week3" value="3">Week3</option>
+            </select>
+        </div>
+        <div class="days hide-days">
+            <div>
+                <p>S</p>
+                <input class="checkbox" type="checkbox" disabled />
+                <p class="placeholder" id="sun">M</p>
+            </div>
+            <div>
+                <p>M</p>
+                <input class="checkbox" type="checkbox" />
+                <p class="placeholder" id="mon">M</p>
+            </div>
+            <div>
+                <p>T</p>
+                <input class="checkbox" type="checkbox" />
+                <p class="placeholder" id="tue">M</p>
+            </div>
+            <div>
+                <p>W</p>
+                <input class="checkbox" type="checkbox" />
+                <p class="placeholder" id="wed">M</p>
+            </div>
+            <div>
+                <p>T</p>
+                <input class="checkbox" type="checkbox" />
+                <p class="placeholder" id="thr">M</p>
+            </div>
+            <div>
+                <p>F</p>
+                <input class="checkbox" type="checkbox" />
+                <p class="placeholder" id="fri">M</p>
+            </div>
+            <div>
+                <p>S</p>
+                <input class="checkbox" type="checkbox" disabled />
+                <p class="placeholder">M</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/dropdown.js"></script>
+</body>
+
+</html>
